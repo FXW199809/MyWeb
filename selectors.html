@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择符使用练习</title>
+	</head>
+	<style>
+		/*
+		 * 类选择符
+		 */
+		.title{
+			background-color: ghostwhite;
+			color: darkblue;
+			font-size: 40px;
+		}
+		/*
+		 * ID选择符
+		 */
+		#tianyi-color{
+			color: #66CCFF;
+		}
+		/*
+		 * 类型选择符
+		 */
+		p{
+			text-indent: 2em;
+			width: 800px;
+		}
+		/*
+		 * 包含选择符
+		 */
+		ul li{
+		list-style-type: none;
+		}
+		/*
+		 * 相邻选择符
+		 */
+		h1+h1{
+			color:greenyellow;
+		}
+		/*
+		 * 兄弟选择符
+		 */
+		h1~p{
+			color:blueviolet;
+		}
+		/*
+		 * 子选择器
+		 */
+		div>p>a{
+			background-color: #000000;
+		}
+		/*
+		 * E[att="val"] { sRules }
+		 * 选择具有att属性且属性值等于val的E元素。
+		 */
+		li[class="longya"]{
+			color:#006666;
+		}
+		/*
+		 * E[att*="val"] { sRules }
+		 * 选择具有att属性且属性值为包含val的字符串的E元素。
+		 */
+		li[class*="t"]{
+			color:yellow;
+		}
+		/*
+		 * E[att^="val"] { sRules }
+		 * 选择具有att属性且属性值为以val开头的字符串的E元素。
+		 */
+		li[class^="a"]{
+			color:#EE0000;
+		}
+		/*
+		 * E[att~="val"] { sRules }
+		 * 选择具有att属性且属性值为一用空格分隔的字词列表，其中一个等于val的E元素（包含只有一个值且该值等于val的情况）。
+		 */
+		li[class~="ren"]{
+			border-bottom:dashed;
+			
+		}
+		/*
+		 * E[att$="val"] { sRules }
+		 * 选择具有att属性且属性值为以val结尾的字符串的E元素。
+		 */
+		li[class$="i"]{
+			border-bottom: double;
+		}
+		/*
+		 * 伪类选择器
+		 */
+		li:first-child{
+			font-size: 35px;
+		}
+		li:last-child{
+			font-size: 25px;
+		}
+		a:link {
+			color: darkturquoise;
+		}
+		a:visited{
+			color:crimson;
+		}
+		a:hover{
+			color: #000000;
+		}
+		/*
+		 * 伪对象选择器
+		 */
+		p::first-letter{
+			
+			font-size: 25px;
+		}
+		p::selection{
+			background-color: black;
+			color:#ff0000;	
+		}
+	</style>
+	<body>
+		<div class="title">
+			洛天依
+		</div>
+		<div id="tianyi-color">
+			<p>
+			特征灰发、绿瞳，发饰碧玉、腰坠中国结的洛天依是一个天然呆，偶然有点温柔细致的十五岁少女。她能够敏锐地感受到他人感情，有点内向。她既有着能够为了别人而流泪的温柔，也有着无论经历多少挫折也绝不放弃的坚强。
+她对过去曾在人类世界创造了历史的，传说中的<a href='?'>VOCALOID</a>前辈们非常憧憬，也梦想着自己有朝一日能够成为用歌声为别人传递感动与幸福的歌手。这样的她在某日突然获得了召唤，并且带着某个重要的任务，作为新的VOCALOID来到了人类世界。
+拥有治愈系声线，来自与我们不同的世界的她，还是一位新人VOCALOID。除了她的歌声以外，她的一切都还是空白。而与你的相遇，将会是她的故事与成长的开始。
+最初来到人类世界时，从飞行器里掉下来砸中了人类少女乐正绫。
+		</p>
+		<a href="?">点一下</a>
+		</div>
+		<ul>
+			<li class="baozi">这是一个包子</li>
+			<li class="thl">这是一个糖葫芦</li>
+			<li class="myt">这是一块麦芽糖</li>
+			<li class="longya ren">这是一只龙牙哥哥</li>
+			<li class="aling ren">这是一只阿绫</li>
+		</ul>
+		<div class="lalala">
+			<h1>啦</h1>
+			<h1>拉</h1>
+			<h1>辣</h1>
+			<p>000</p>
+			<p>001</p>
+			<div>
+				<p>010</p>
+				<p>011</p>
+			</div>
+	
+		</div>
+	</body>
+</html>
